@@ -1,0 +1,14 @@
+{
+  "extends": ["eslint:recommended", "standard"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "templateStrings": true
+    }
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  }
+}
