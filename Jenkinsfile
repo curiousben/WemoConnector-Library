@@ -7,18 +7,7 @@ pipeline {
       VERSION = '1.0.0'
     }
     stages {
-        stage('Pull Github Repo'){
-            steps {
-                deleteDir()
-                checkout([$class: 'GitSCM',
-                    branches: [[name: '*/master']],
-                    doGenerateSubmoduleConfigurations: false,
-                    submoduleCfg: [],
-                    userRemoteConfigs: [[url: 'https://github.com/curiousben/WemoConnector-Library.git']]
-                ])
-            }
-        }
-        stage('Install, Test, and Build Filter') {
+        stage('Install, Test, and Build WemoConnector') {
             agent {
                 docker 'node:8.12.0-jessie'
             }
