@@ -16,7 +16,7 @@ pipeline {
             }
             steps {
                 dir(LIBRARY_PATH) {
-                    sh 'npm install --only=dev'
+                    sh 'npm install'
                     sh 'npm test'
                     sh 'npm pack'
                 }
@@ -33,6 +33,11 @@ pipeline {
             steps {
                 sh 'echo Successfully built the image'
             }
+        }
+    }
+    post { 
+        always { 
+            deleteDir()
         }
     }
 }
