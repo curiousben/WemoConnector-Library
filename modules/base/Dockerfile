@@ -1,5 +1,5 @@
 ####################################
-# Core Filter Image
+# Template Core Library
 # Author: BenSmith(CuriousBen)
 ####################################
 
