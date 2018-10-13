@@ -5,7 +5,7 @@
   "description": "This Microservice exposes the REST API to the RedisMQ flow",
   "author": "Benjamin Smith",
   "license": "MIT",
-  "main": "./api.js",
+  "main": "./wemo-connector.js",
   "scripts": {
     "test": "./scripts/testCoreJS.sh"
   },

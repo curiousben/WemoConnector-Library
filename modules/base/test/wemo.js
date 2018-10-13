@@ -4,7 +4,7 @@
 *
 */
 
-const WemoConnector = require('../wemo.js')
+const WemoConnector = require('../wemo-connector.js')
 const winston = require('winston')
 var logger = new winston.Logger({
   level: 'error',
